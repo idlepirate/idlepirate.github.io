@@ -24,10 +24,10 @@
          if(navigator.userAgent.toLowerCase().match(/android/i) == "android")
          {
                  var url = "intent://invite/#Intent;scheme=idlepirate;package=com.chuchugame.idlepirate.android;S.browser_fallback_url=https%3A%2F%2Fidlepirate.github.io%2Fs" + id + ";end";
-//                  var dlink = document.createElement('a');
-//                  dlink.href = url;
-//                  dlink.click();
-                 window.location.href = url
+                 var dlink = document.createElement('a');
+                 dlink.href = url;
+                 dlink.click();
+//                  window.location.href = url
          }
          else
          {

@@ -20,7 +20,16 @@
 </head>
 <body>
  <script>
-         window.location.href = "intent://invite/#Intent;scheme=idlepirate;package=com.chuchugame.idlepirate.android;S.browser_fallback_url=https%3A%2F%2Fdlepirate.github.io%2Fs18889996666;end";
+         var id = 18889996666;
+         if(navigator.userAgent.match(/Android/i))
+         {
+                 window.location.href = "intent://invite/#Intent;scheme=idlepirate;package=com.chuchugame.idlepirate.android;S.browser_fallback_url=https%3A%2F%2Fdlepirate.github.io%2Fs" + id + ";end";
+         }
+         else
+         {
+                 window.location.href = "" + id;
+         }
+         
  </script>       
 </body>
 </html>

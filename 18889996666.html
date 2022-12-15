@@ -21,7 +21,7 @@
 <body>
  <script>
          var id = 18889996666;
-         if(navigator.userAgent.match(/Android/i))
+         if(navigator.userAgent.toLowerCase().match(/android/i) == "android")
          {
                  window.location.href = "intent://invite/#Intent;scheme=idlepirate;package=com.chuchugame.idlepirate.android;S.browser_fallback_url=https%3A%2F%2Fidlepirate.github.io%2Fs" + id + ";end";
          }

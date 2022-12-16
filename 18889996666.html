@@ -22,7 +22,8 @@
  <script>
         function isFacebookApp() {
             var ua = navigator.userAgent || navigator.vendor || window.opera;
-            return (ua.indexOf("FB4A") > -1 || ua.indexOf("FBAV") > -1);
+            return (ua.indexOf("FB4A") > -1
+            //return (ua.indexOf("FB4A") > -1 || ua.indexOf("FBAV") > -1);
         }
          var id = 88888888;
          var installUrl = "https://play.google.com/store/apps/details?id=com.chuchugame.idlepirate.android&referrer=utm_source%3Din_game_promotions%26utm_content%3Dinvite%26invite_id%3D" + id       

@@ -2,9 +2,33 @@
 
 <html>
 <body>
- <script> 
+ <script>
+    function getQueryVariable(variable)
+   {
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+           var pair = vars[i].split("=");
+           if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+   }
+   var id = getQueryVariable("id")
+   var query = window.location.search.substring(1);
+   let text = "<p>Browser CodeName: " + navigator.appCodeName + "</p>" +
+   "<p>Browser Name: " + navigator.appName + "</p>" +
+   "<p>Browser Version: " + navigator.appVersion + "</p>" +
+   "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>" +
+   "<p>Browser Language: " + navigator.language + "</p>" +
+   "<p>Browser Online: " + navigator.onLine + "</p>" +
+   "<p>Platform: " + navigator.platform + "</p>" +
+   "<p>User-agent header: " + navigator.userAgent + "</p>" +
+   "<p>用户参数: " + query + "</p>";
+   document.getElementById("demo").innerHTML = text;
+   </script>
+<!--  <script> 
     var id = 18889996666;
     window.location.href="https://play.google.com/store/apps/details?id=com.chuchugame.idlepirate.android&referrer=utm_source%3Din_game_promotions%26utm_content%3Dinvite%26invite_id%3D" + id       
- </script>       
+ </script>        -->
 </body>
 </html>

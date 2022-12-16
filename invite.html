@@ -37,7 +37,8 @@
      var id = getQueryVariable("id")
      //var id = 88888888;
      var installUrl = "https://play.google.com/store/apps/details?id=com.chuchugame.idlepirate.android&referrer=utm_source%3Din_game_promotions%26utm_content%3Dinvite%26invite_id%3D" + id       
-     var fallbackUrl = "https://idlepirate.github.io/invitefallback?id=com.chuchugame.idlepirate.android&referrer=utm_source%3Din_game_promotions%26utm_content%3Dinvite%26invite_id%3D" + id       
+     //var fallbackUrl = "https://idlepirate.github.io/invitefallback?id=com.chuchugame.idlepirate.android&referrer=utm_source%3Din_game_promotions%26utm_content%3Dinvite%26invite_id%3D" + id       
+     var fallbackUrl = installUrl;
      function openorinstanll()
      {
        if(navigator.userAgent.toLowerCase().match(/android/i) == "android")

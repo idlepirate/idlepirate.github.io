@@ -16,7 +16,18 @@ let text = "<p>Browser CodeName: " + navigator.appCodeName + "</p>" +
 "<p>Browser Online: " + navigator.onLine + "</p>" +
 "<p>Platform: " + navigator.platform + "</p>" +
 "<p>User-agent header: " + navigator.userAgent + "</p>";
-
+function getQueryVariable(variable)
+{
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable){return pair[1];}
+    }
+    return(false);
+}
+var id = getQueryVariable("id")
+"<p>用户id: " + id + "</p>";
 document.getElementById("demo").innerHTML = text;
 </script>
 

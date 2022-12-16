@@ -24,7 +24,18 @@
         var ua = navigator.userAgent || navigator.vendor || window.opera;
         return (ua.indexOf("FB4A") > -1);
     }
-     var id = 88888888;
+ function getQueryVariable(variable)
+{
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable){return pair[1];}
+    }
+    return "";
+}
+     var id = getQueryVariable("id")
+     //var id = 88888888;
      var installUrl = "https://play.google.com/store/apps/details?id=com.chuchugame.idlepirate.android&referrer=utm_source%3Din_game_promotions%26utm_content%3Dinvite%26invite_id%3D" + id       
      function openorinstanll()
      {
@@ -41,9 +52,7 @@
    
      if(isFacebookApp())
      {
-         var timeouthandler = setTimeout(()=>{
-                 window.location.href = installUrl;
-         },500);
+         window.location.href = installUrl;
      }
      else
      {

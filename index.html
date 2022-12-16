@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       <meta name="twitter:card" content="summary_large_image">
+      <title>来和我一起玩[Idle Pirate - Deep Sea Tycoon]吧！让我们携手并肩，主宰海洋！</title>
+      <meta property="og:title" content="来和我一起玩[Idle Pirate - Deep Sea Tycoon]吧！让我们携手并肩，主宰海洋！">
+      <meta name="twitter:title" content="来和我一起玩[Idle Pirate - Deep Sea Tycoon]吧！让我们携手并肩，主宰海洋！">
+      <meta name="description" content="通过此链接下载安装游戏，你和你的朋友都可以获得一把神秘钥匙！">
+      <meta property="og:description" content="通过此链接下载安装游戏，你和你的朋友都可以获得一把高级选择钥匙！">
+      <meta name="twitter:description" content="通过此链接下载安装游戏，你和你的朋友都可以获得一把高级选择钥匙！">
+      <meta property="og:image" content="https://github.com/idlepirate/idlepirate.github.io/blob/main/invite.jpg?raw=true">
+      <meta name="twitter:image" content="https://github.com/idlepirate/idlepirate.github.io/blob/main/invite.jpg?raw=true">
+        
+    <meta property="al:android:url" content="idlepirate://invite">    
+    <meta property="al:android:package" content="com.chuchugame.idlepirate.android">
+    <meta property="al:android:app_name" content="Idle Pirate - Deep Sea Tycoon">
+    <meta property="og:type" content="website" />
+</head>
+<body>
+ <script>
+    function isFacebookApp() {
+        var ua = navigator.userAgent || navigator.vendor || window.opera;
+        return (ua.indexOf("FB4A") > -1);
+    }
+     var id = 88888888;
+     var installUrl = "https://play.google.com/store/apps/details?id=com.chuchugame.idlepirate.android&referrer=utm_source%3Din_game_promotions%26utm_content%3Dinvite%26invite_id%3D" + id       
+     function openorinstanll()
+     {
+       if(navigator.userAgent.toLowerCase().match(/android/i) == "android")
+       {
+          var url = "intent://idlepirate.github.io/" + id + "/#Intent;scheme=https;package=com.chuchugame.idlepirate.android;S.browser_fallback_url=" + encodeURIComponent(installUrl) +";end"
+          window.location.href = url
+       }
+       else
+       {
+           window.location.href = installUrl
+       }
+     }
+   
+     if(isFacebookApp())
+     {
+         var timeouthandler = setTimeout(()=>{
+                 window.location.href = installUrl;
+         },500);
+     }
+     else
+     {
+        openorinstanll();  
+     }
+ </script>       
+</body>
+</html>

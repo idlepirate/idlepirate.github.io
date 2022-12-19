@@ -22,7 +22,7 @@
  <script>
     function isFacebookApp() {
         var ua = navigator.userAgent || navigator.vendor || window.opera;
-        return (ua.indexOf("FB4A") > -1);
+        return (ua.indexOf("FB4A") > -1 || ua.indexOf("FBAV") > -1 || || ua.indexOf("FB_IAB") > -1);
     }
  function getQueryVariable(variable)
 {

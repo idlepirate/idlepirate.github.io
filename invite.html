@@ -46,7 +46,7 @@
      //var fallbackUrl = "https://idlepirate.github.io/invitefallback?id=com.chuchugame.idlepirate.android&referrer=utm_source%3Din_game_promotions%26utm_content%3Dinvite%26invite_id%3D" + id   
      let isAndroid =   navigator.userAgent.toLowerCase().match(/android/i) == "android"
      const isiOS = !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-     let isMac = navigator.platform.indexOf("Mac")
+     let isMac = navigator.platform.indexOf("Mac") == 0
      if(isiOS || isMac)
      {
        installUrl = "https://apps.apple.com/app/screw-match-nuts-and-bolts/id6503701725"

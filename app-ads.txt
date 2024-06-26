@@ -1,7 +1,8 @@
 google.com, pub-2309959679353052, DIRECT, f08c47fec0942fa0
 ironsrc.com, 322347, Direct
-facebook.com, 3500378733517934, RESELLER, c3e20eee3f780d68
-facebook.com, 800308795021102, RESELLER, c3e20eee3f780d68
+facebook.com, 800308795021102, DIRECT, c3e20eee3f780d68
+facebook.com, 3500378733517934, DIRECT, c3e20eee3f780d68
+
 
 rubiconproject.com, 24400, RESELLER, 0bfd66d529a55807
 video.unrulymedia.com, 2464975885, RESELLER

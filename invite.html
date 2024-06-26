@@ -19,7 +19,7 @@
 
     <meta property="al:ios:url" content="stackscrewmatch://invite">    
     <meta property="al:ios:app_store_id" content="6503701725">
-    <meta property="al:ios:app_name" content="Screw Match">
+    <meta property="al:ios:app_name" content="Screw Match - Nuts and Bolts">
 
     <meta property="og:type" content="website" />
     <meta property="fb:app_id" content="831732382147555" />
@@ -46,13 +46,14 @@
      //var fallbackUrl = "https://idlepirate.github.io/invitefallback?id=com.chuchugame.idlepirate.android&referrer=utm_source%3Din_game_promotions%26utm_content%3Dinvite%26invite_id%3D" + id   
      let isAndroid =   navigator.userAgent.toLowerCase().match(/android/i) == "android"
      const isiOS = !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-     if(isiOS)
+     let isMac = navigator.platform.indexOf("Mac") == 0
+     if(isiOS || isMac)
      {
        installUrl = "https://apps.apple.com/app/screw-match-nuts-and-bolts/id6503701725"
      } 
-     if(!isAndroid && !isiOS) {
-        installUrl = "https://www.facebook.com/people/Screw-Match-Puzzle-Glass-Nut/61559626143926"
-     }
+     // if(!isAndroid && !isiOS) {
+     //    installUrl = "https://www.facebook.com/people/Screw-Match-Puzzle-Glass-Nut/61559626143926"
+     // }
      
      var fallbackUrl = installUrl;
      function openorinstanll()

@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.xiaolinfu.screwmatch",
+      "sha256_cert_fingerprints": [
+        "8C:39:A7:30:A2:3F:C5:DF:21:72:B3:78:7F:8D:6C:7A:ED:96:0D:88:A0:C2:6D:3E:B9:57:B4:9F:D6:F8:B4:1D"
+      ]
+    }
+  }
+]

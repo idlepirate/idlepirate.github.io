@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       <meta name="twitter:card" content="summary_large_image">
+      <title>Come and play [Screw Match] with me! The game is fun and brain-burning!</title>
+      <meta property="og:title" content="Come and play [Screw Match] with me! The game is fun and brain-burning!">
+      <meta name="twitter:title" content="Come and play [Screw Match] with me! The game is fun and brain-burning!">
+      <meta name="description" content="Download and install the game through this link, you and your friends can get 10 coins!">
+      <meta property="og:description" content="Download and install the game through this link, you and your friends can get 100 coins!">
+      <meta name="twitter:description" content="Download and install the game through this link, you and your friends can get 100 coins!">
+      <meta property="og:image" content="https://github.com/idlepirate/idlepirate.github.io/blob/main/invite2.jpg?raw=true">
+      <meta name="twitter:image" content="https://github.com/idlepirate/idlepirate.github.io/blob/main/invite2.jpg?raw=true">
+        
+    <meta property="al:android:url" content="stackscrewmatch://invite">    
+    <meta property="al:android:package" content="com.xiaolinfu.screwmatch">
+    <meta property="al:android:app_name" content="Screw Match">
+
+    <meta property="al:ios:url" content="stackscrewmatch://invite">    
+    <meta property="al:ios:app_store_id" content="6503701725">
+    <meta property="al:ios:app_name" content="Screw Match - Nuts and Bolts">
+
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="831732382147555" />
+</head>
+<body>
+ <script>
+    function isFacebookApp() {
+        var ua = navigator.userAgent || navigator.vendor || window.opera;
+        return (ua.indexOf("FB4A") > -1 || ua.indexOf("FBAV") > -1 || ua.indexOf("FB_IAB") > -1);
+    }
+ function getQueryVariable(variable)
+{
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable){return pair[1];}
+    }
+    return "";
+}
+     var id = getQueryVariable("id")
+     //var id = 88888888;
+     var installUrl = "https://play.google.com/store/apps/details?id=com.xiaolinfu.screwmatch&referrer=utm_source%3Din_game_promotions%26utm_content%3Dinvite%26invite_id%3D" + id       
+     //var fallbackUrl = "https://idlepirate.github.io/invitefallback?id=com.chuchugame.idlepirate.android&referrer=utm_source%3Din_game_promotions%26utm_content%3Dinvite%26invite_id%3D" + id   
+     let isAndroid =   navigator.userAgent.toLowerCase().match(/android/i) == "android"
+     const isiOS = !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+     let isMac = navigator.platform.indexOf("Mac") == 0
+     if(isiOS || isMac)
+     {
+       installUrl = "https://apps.apple.com/app/screw-match-nuts-and-bolts/id6503701725"
+     } 
+     // if(!isAndroid && !isiOS) {
+     //    installUrl = "https://www.facebook.com/people/Screw-Match-Puzzle-Glass-Nut/61559626143926"
+     // }
+     
+     var fallbackUrl = installUrl;
+     function openorinstanll()
+     {
+       if(isAndroid)
+       {
+          var url = "intent://xiaolinfu.cn/screwmatch/invite/" + id + "/#Intent;scheme=https;package=com.xiaolinfu.screwmatch;S.browser_fallback_url=" + encodeURIComponent(fallbackUrl) +";end"
+          window.location.href = url
+       }
+       else
+       {
+           window.location.href = installUrl
+       }
+     }
+   
+     if(isFacebookApp())
+     {
+         window.location.href = installUrl;
+     }
+     else
+     {
+        openorinstanll();  
+     }
+ </script>       
+</body>
+</html>

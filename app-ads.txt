@@ -936,3 +936,8 @@ app-stock.com, 384491, RESELLER
 improvedigital.com, 1664, RESELLER
 contextweb.com, 563595, RESELLER, 89ff185a4c4e857c
 
+advertising.com, 82632, RESELLER
+
+lijit.com, 556191, RESELLER, fafdf38b16bf6b2b
+
+taurusx.com, 80635, RESELLER

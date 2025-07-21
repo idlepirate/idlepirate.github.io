@@ -10,5 +10,18 @@
         "8C:39:A7:30:A2:3F:C5:DF:21:72:B3:78:7F:8D:6C:7A:ED:96:0D:88:A0:C2:6D:3E:B9:57:B4:9F:D6:F8:B4:1D"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.xiaolinfu.lastknife",
+      "sha256_cert_fingerprints": [
+        "CB:13:E0:7B:7A:01:94:43:9A:92:F5:59:81:57:19:8C:52:A3:49:50:FE:85:4C:68:C8:D5:94:C2:5F:B1:0E:5C"
+      ]
+    }
   }
 ]
